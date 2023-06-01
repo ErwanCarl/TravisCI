@@ -1,8 +1,9 @@
 language: php
 php:
-  - 8.2.4
+  - '8.2'
+  
+install: 
+  - composer install
   
 script:
-  - composer install
-  - composer update
   - vendor/bin/phpunit
