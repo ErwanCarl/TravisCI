@@ -1,9 +1,9 @@
 language: php
 php:
   - '8.2'
-  
-install: 
-  - composer install
+
+before_install:
+  - composer self-update
   
 script:
   - vendor/bin/phpunit
