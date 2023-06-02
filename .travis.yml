@@ -2,11 +2,8 @@ language: php
 php:
   - '8.2'
 
-before_install:
-  - composer self-update --2
-
 install: 
-  - composer install --prefer-dist --no-interaction
+  - composer.phar install --prefer-dist --no-interaction 
 
 script:
   - vendor/bin/phpunit
